@@ -1,0 +1,21 @@
+---
+title: "data_wrangling_1"
+output: html_document
+date: "2023-09-19"
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+let's import "FAS_litters.csv" csv.
+
+```{r}
+litters_df = 
+  read_csv("C:/Users/magno/Desktop/R_notes/data/FAS_litters.csv")
+
+litters_df = 
+  janitor::clean_names(litters_df)
+```
+
