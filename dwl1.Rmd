@@ -19,3 +19,19 @@ litters_df =
   janitor::clean_names(litters_df)
 ```
 
+import pups dataset 
+```{r}
+pups_df = 
+  read_csv("C:/Users/magno/Desktop/R_notes/data/FAS_pups.csv")
+
+pups_df = 
+  janitor::clean_names(pups_df)
+```
+
+look at a data summary 
+```{r}
+str(litters_df)
+
+skimr::skim(litters_df)
+```
+
